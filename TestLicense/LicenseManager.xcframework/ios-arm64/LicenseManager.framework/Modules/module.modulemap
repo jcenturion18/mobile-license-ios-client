@@ -1,0 +1,8 @@
+framework module "LicenseManager" {
+    umbrella header "LicenseManager.h"
+
+    export *
+    module * { export * }
+
+    use Foundation
+}
