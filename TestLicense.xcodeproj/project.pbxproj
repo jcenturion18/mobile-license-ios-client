@@ -16,6 +16,8 @@
 		B924FB502CACA57100A09D82 /* TestLicenseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B924FB4F2CACA57100A09D82 /* TestLicenseTests.swift */; };
 		B924FB5A2CACA57100A09D82 /* TestLicenseUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B924FB592CACA57100A09D82 /* TestLicenseUITests.swift */; };
 		B924FB5C2CACA57100A09D82 /* TestLicenseUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B924FB5B2CACA57100A09D82 /* TestLicenseUITestsLaunchTests.swift */; };
+		B924FB6B2CACA5CB00A09D82 /* ValidateSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = B924FB6A2CACA5CB00A09D82 /* ValidateSwift.swift */; };
+		B924FB772CADC3BE00A09D82 /* LicenseManager.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = B924FB762CADC3BE00A09D82 /* LicenseManager.xcframework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		B924FB552CACA57100A09D82 /* TestLicenseUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestLicenseUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B924FB592CACA57100A09D82 /* TestLicenseUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestLicenseUITests.swift; sourceTree = "<group>"; };
 		B924FB5B2CACA57100A09D82 /* TestLicenseUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestLicenseUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B924FB6A2CACA5CB00A09D82 /* ValidateSwift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidateSwift.swift; sourceTree = "<group>"; };
+		B924FB762CADC3BE00A09D82 /* LicenseManager.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = LicenseManager.xcframework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B924FB772CADC3BE00A09D82 /* LicenseManager.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,6 +104,7 @@
 		B924FB372CACA56E00A09D82 /* TestLicense */ = {
 			isa = PBXGroup;
 			children = (
+				B924FB762CADC3BE00A09D82 /* LicenseManager.xcframework */,
 				B924FB382CACA56E00A09D82 /* AppDelegate.swift */,
 				B924FB3A2CACA56E00A09D82 /* SceneDelegate.swift */,
 				B924FB3C2CACA56E00A09D82 /* ViewController.swift */,
@@ -106,6 +112,7 @@
 				B924FB412CACA57000A09D82 /* Assets.xcassets */,
 				B924FB432CACA57000A09D82 /* LaunchScreen.storyboard */,
 				B924FB462CACA57000A09D82 /* Info.plist */,
+				B924FB6A2CACA5CB00A09D82 /* ValidateSwift.swift */,
 			);
 			path = TestLicense;
 			sourceTree = "<group>";
@@ -259,6 +266,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B924FB3D2CACA56E00A09D82 /* ViewController.swift in Sources */,
+				B924FB6B2CACA5CB00A09D82 /* ValidateSwift.swift in Sources */,
 				B924FB392CACA56E00A09D82 /* AppDelegate.swift in Sources */,
 				B924FB3B2CACA56E00A09D82 /* SceneDelegate.swift in Sources */,
 			);
@@ -443,6 +451,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = A743G7V68R;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/TestLicense",
+				);
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = TestLicense/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -471,6 +483,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = A743G7V68R;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/TestLicense",
+				);
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = TestLicense/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
